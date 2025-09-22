@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashley Aesthetics</title>
+  <style>
+    /* Fonts: Y2K style */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #050505; /* almost black for contrast */
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRaArTYWkKH5vAKGrmmfSWytsNB2sUIKlWuA&s') center/cover no-repeat;
+      position: relative;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 3.5em;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      color: #ff77ff; /* neon pink */
+      text-shadow: 0 0 10px #ff77ff, 0 0 20px #77ffff;
+    }
+
+    nav {
+      background: #00ffea; /* neon teal accent */
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: #050505;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      color: #ff77ff;
+      text-decoration: underline;
+    }
+
+    section {
+      position: relative;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 16px;
+      overflow: hidden;
+      background: rgba(10,10,10,0.85); /* dark card background with slight transparency */
+    }
+    section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+      z-index: 0;
+      mix-blend-mode: luminosity;
+    }
+    section > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      color: #00ffea;
+      text-shadow: 0 0 8px #00ffea, 0 0 15px #ff77ff;
+    }
+
+    .card {
+      background: rgba(20,20,20,0.9);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 119, 255, 0.4), 0 0 10px rgba(0,255,234,0.4);
+    }
+
+    ul.price-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.price-list li {
+      margin: 6px 0;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 14px 30px;
+      margin-top: 20px;
+      background: #ff77ff;
+      color: #050505;
+      border-radius: 30px;
+      text-decoration: none;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: bold;
+      box-shadow: 0 0 15px #ff77ff;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: #00ffea;
+      color: #111;
+      box-shadow: 0 0 20px #00ffea;
+    }
+
+    footer {
+      background: #00ffea;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 30px;
+    }
+    footer p {
+      margin: 5px 0;
+      color: #050505;
+      font-family: 'Orbitron', sans-serif;
+    }
+    footer a {
+      color: #ff77ff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Different section background images */
+    #services::before {
+      background-image: url('https://images.unsplash.com/photo-1601187108338-62bc4e3ab72c?auto=format&fit=crop&w=900&q=80');
+    }
+    #products::before {
+      background-image: url('https://images.unsplash.com/photo-1593032465177-c5d52108ccf7?auto=format&fit=crop&w=900&q=80');
+    }
+    #pricing::before {
+      background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80');
+    }
+    #appointments::before {
+      background-image: url('https://images.unsplash.com/photo-1573164574396-cf5fcbf926a8?auto=format&fit=crop&w=900&q=80');
+    }
+    #contact::before {
+      background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80');
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ashley Aesthetics</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#appointments">Appointments</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hi, I’m <strong>Ashley Romero</strong>, Mexican-American hairstylist since age 5, cosmetology licensed right out of high school. My specialty is braids & men’s cuts, and I love playing with color. Hair is my art and passion.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services Overview</h2>
+    <div class="card">
+      <p>What I do best: haircuts for men, women & kids; all styles of braids; color services; styling & more. Full details in pricing.</p>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Full Pricing</h2>
+    <div class="card">
+      <div class="pricing-details">
+        <strong>Haircuts</strong><br>
+        Men’s cut $25<br>
+        Kids cut $18<br>
+        Women cut $30<br>
+        Trim (max 2 in.) $18<br>
+        Wash & blow dry with style $40 (+$10 long hair)<br>
+        Style $35 (straight or curly) +$10 long hair<br>
+        Ponytails with weave $45<br><br>
+
+        <strong>Braids</strong><br>
+        Natural hair starting $25+<br>
+        Extensions (feed-ins) starting $40+<br>
+        Knotless (up to hip): Jumbo $80 | Large $95 | Medium $150<br>
+        Braids past hip +$25<br>
+        No small or x-small<br>
+        Boho on braids +$20<br>
+        Curled ends $10 on knotless<br>
+        Men’s braids starting at $20<br><br>
+
+        <strong>Waxing</strong><br>
+        Eyebrow $10 | Lip $5<br><br>
+
+        <strong>Hair Color</strong><br>
+        Natural all-over $45<br>
+        Root touch-up (max 3 in growth) $28<br>
+        Bleach services starting $50<br><br>
+
+        <strong>Fantasy Color</strong><br>
+        Refresh $40<br>
+        New fantasy (bleach + correction) starting $150+<br>
+        Fantasy on virgin hair $80+<br>
+        Money piece $60<br>
+        Peekaboo starting $80<br><br>
+
+        *All fantasy & bleach need consultation.<br>
+        *Prices vary with length.<br>
+        *No highlights (coming soon) or full bleach without color if previous color exists.
+      </div>
+    </div>
+  </section>
+
+  <section id="appointments">
+    <h2>Book an Appointment</h2>
+    <div class="card">
+      <p>Click below to schedule through Calendly:</p>
+      <p><a class="button" href="https://calendly.com/axhleyr" target="_blank">📅 Book Now</a></p>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Top Recommended Products</h2>
+    <div class="card">
+      <p>✨ Coming soon… my favorite hair products with affiliate links.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:axhleyr@icloud.com" style="color:#00ffea;">axhleyr@icloud.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/axhleyr" target="_blank" style="color:#ff77ff;">@axhleyr</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ashley Aesthetics</p>
+  </footer>
+
+</body>
+</html>
